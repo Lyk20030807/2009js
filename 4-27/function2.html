@@ -8,13 +8,16 @@
 </head>
 <body>
     <script>
-        var arr = [1,2,3,4,5,7]
-        Array.prototype.trim = function(){
-            this.shift() 
-            this.pop()
+
+        function add(num1,num2) {
+            return num1 + num2
         }
-        arr.trim()
-        console.log(arr);
+
+        function test(fun,a,b) {
+           return fun(a,b)
+        }
+
+        console.log(test(add,11,22));
     </script>
 </body>
 </html>
