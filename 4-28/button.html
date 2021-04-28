@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div class="btn">
+        <input type="button" value="A" />
+        <input type="button" value="B" />
+        <input type="button" value="C" />
+        <input type="button" value="D" />
+        <input type="button" value="E" />
+    </div> -->
+        <button>A</button>
+        <button>B</button>
+        <button>C</button>
+        <button>D</button>
+        <button>E</button>
+    </body>
+</html>
+<script>
+//         var oBtn=document.getElementsByTagName('input');
+//         for(var i=0;i<oBtn.length;i++){
+//         (function(i){
+//         oBtn.item(i).onclick=function(){
+//         alert(i)
+//         }
+//     })(i)
+// }
+// var obtn=document.getElementsByTagName('button');
+// for(let i=0;i<obtn.length;i++){
+//     obtn[i].index=i;
+//     obtn[i].onclick=function(){
+//         alert(this.index)
+//     }
+// }
+var o = document.getElementsByTagName("button")
+
+for(let i=0;i<o.length;i++)
+{
+  o[i].onclick = function(){
+    alert(i)
+  }
+}
+
+
+
+// // 讲一个 HTML集合编程数组
+// var arr = Array.prototype.slice.call(o)
+// console.log(arr)
+//
+// arr.forEach(function(v,k){
+//   v.addEventListener("click",function(){
+//     alert(k)
+//   })
+// })
+
+</script>
